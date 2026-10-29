@@ -3,13 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIP.COOP — Viviendas modulares con paneles SIP</title>
-<meta name="description" content="Fabricamos y armamos viviendas modulares con paneles SIP en Córdoba. Modelos de 56 m² y 81 m², construcción rápida y envíos a todo el país.">
+<title>Casas de paneles SIP y viviendas modulares | SIP.COOP</title>
+<meta name="description" content="Fabricamos viviendas modulares con paneles SIP en todo el país y las armamos en tu terreno. Modelos de 56 m² y 81 m², construcción en seco, rápida y con gran aislación térmica.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://sip-coop.vercel.app/">
 <meta name="theme-color" content="#0C2F23">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="SIP.COOP">
 <meta property="og:locale" content="es_AR">
-<meta property="og:title" content="SIP.COOP — Viviendas modulares con paneles SIP">
+<meta property="og:url" content="https://sip-coop.vercel.app/">
+<meta property="og:title" content="Casas de paneles SIP y viviendas modulares | SIP.COOP">
 <meta property="og:description" content="Fabricamos tu casa en todo el país y la armamos en tu terreno. Modelos de 56 m² y 81 m².">
+<meta property="og:image" content="https://sip-coop.vercel.app/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SIP.COOP: viviendas modulares con paneles SIP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Casas de paneles SIP y viviendas modulares | SIP.COOP">
+<meta name="twitter:description" content="Fabricamos tu casa en todo el país y la armamos en tu terreno. Modelos de 56 m² y 81 m².">
+<meta name="twitter:image" content="https://sip-coop.vercel.app/img/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sip-coop.vercel.app/#org",
+      "name": "SIP.COOP",
+      "url": "https://sip-coop.vercel.app/",
+      "logo": "https://sip-coop.vercel.app/img/icon-512.png",
+      "image": "https://sip-coop.vercel.app/img/og.png",
+      "description": "Fabricación y montaje de viviendas modulares con paneles SIP.",
+      "telephone": "+5493516323758",
+      "sameAs": ["https://instagram.com/sip.coop"],
+      "address": { "@type": "PostalAddress", "addressLocality": "Córdoba", "addressCountry": "AR" },
+      "areaServed": { "@type": "Country", "name": "Argentina" },
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+5493516323758", "contactType": "customer service", "availableLanguage": "es" }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://sip-coop.vercel.app/",
+      "name": "SIP.COOP",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://sip-coop.vercel.app/#org" }
+    },
+    {
+      "@type": "Product",
+      "name": "Vivienda modular SIP de 56 m²",
+      "description": "Casa de una planta con 2 dormitorios y 1 baño, planta de 7.00 × 8.00 m, construida con paneles SIP.",
+      "image": "https://sip-coop.vercel.app/img/casa-56.webp",
+      "brand": { "@type": "Brand", "name": "SIP.COOP" },
+      "manufacturer": { "@id": "https://sip-coop.vercel.app/#org" }
+    },
+    {
+      "@type": "Product",
+      "name": "Vivienda modular SIP de 81 m²",
+      "description": "Casa de una planta con 3 dormitorios y 1 baño, planta de 9.00 × 9.00 m, construida con paneles SIP.",
+      "image": "https://sip-coop.vercel.app/img/casa-81.webp",
+      "brand": { "@type": "Brand", "name": "SIP.COOP" },
+      "manufacturer": { "@id": "https://sip-coop.vercel.app/#org" }
+    }
+  ]
+}
+</script>
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192.png">
@@ -99,6 +155,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .nav { display: flex; align-items: center; gap: 4px; }
 .nav a { padding: 10px 14px; font-size: 15px; font-weight: 500; color: var(--on-ink); transition: color 0.18s; }
 .nav a:hover { color: #fff; }
+.nav .ig { display: inline-flex; align-items: center; padding: 10px; }
+.nav .ig svg { width: 22px; height: 22px; }
 .nav .btn { margin-left: 12px; min-height: 42px; padding: 0 20px; font-size: 15px; color: var(--ink); }
 .hamburger { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; flex-direction: column; gap: 6px; background: none; border: 0; cursor: pointer; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--eps); transition: transform 0.2s ease-out, opacity 0.2s; }
@@ -309,13 +367,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 <header class="header">
   <div class="wrap header-inner">
-    <a href="#" class="logo" aria-label="SIP.COOP, inicio"><img src="img/logo-256.webp" alt="" width="46" height="46"><span>SIP<i>.</i>COOP</span></a>
+    <a href="#" class="logo" aria-label="SIP.COOP, inicio"><img src="img/logo-256.webp" alt="" width="46" height="46" fetchpriority="high"><span>SIP<i>.</i>COOP</span></a>
     <nav class="nav" aria-label="Principal">
       <a href="#sistema">Sistema SIP</a>
       <a href="#modelos">Modelos</a>
       <a href="#ventajas">Ventajas</a>
       <a href="#proceso">Proceso</a>
       <a href="#envios">Envíos</a>
+      <a href="https://instagram.com/sip.coop" class="ig" target="_blank" rel="noopener" aria-label="Instagram @sip.coop"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
       <a href="#contacto" class="btn btn--osb">Contactanos</a>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
@@ -329,6 +388,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   <a href="#ventajas">Ventajas</a>
   <a href="#proceso">Proceso</a>
   <a href="#envios">Envíos</a>
+  <a href="https://instagram.com/sip.coop" target="_blank" rel="noopener">Instagram</a>
   <a href="#contacto" class="btn btn--osb">Contactanos</a>
 </div>
 
@@ -343,6 +403,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
       <div class="hero-actions">
         <a class="btn btn--osb" href="https://wa.me/5493516323758?text=Hola%2C%20quiero%20consultar%20por%20una%20vivienda%20modular" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
         <a class="link-line" href="#modelos">Ver los dos modelos</a>
+        <a class="link-line" href="https://instagram.com/sip.coop" target="_blank" rel="noopener">Seguinos en Instagram</a>
       </div>
     </div>
     <figure class="panel" aria-label="Corte de un panel SIP: placa de OSB, núcleo de EPS y placa de OSB">
@@ -503,7 +564,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 <!-- ENVÍOS -->
 <section class="section envios" id="envios">
   <div class="wrap envios-grid">
-    <h2>Los paneles salen de Córdoba y llegan a cualquier terreno del país</h2>
+    <h2>Fabricamos y enviamos casas de paneles SIP a cualquier terreno del país</h2>
     <div>
       <p>Consultanos por tu zona y te contamos cómo coordinamos el envío y el montaje.</p>
       <a class="btn btn--ink" href="https://wa.me/5493516323758?text=Hola%2C%20quiero%20consultar%20por%20env%C3%ADos%20a%20mi%20zona" target="_blank" rel="noopener">Consultar envío a mi zona</a>
